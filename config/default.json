@@ -1,5 +1,7 @@
 {
     "mongoURI": "mongodb+srv://ego229:Mmaude@aftersei-isplp.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken"
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "6f76b51dd73580e8fe69",
+    "githubSecret": "d1488fc4289d3f0f7bbb1bb0fff8c030aeac3369"
 }
 
