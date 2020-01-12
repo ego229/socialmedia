@@ -4,8 +4,9 @@
   "description": "social media clone",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd client && npm start\""
   },
   "keywords": [
     "Ego229"
