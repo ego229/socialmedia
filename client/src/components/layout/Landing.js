@@ -12,9 +12,9 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Henderson Professional Networking </h1>
+          <h1 className='x-large'> Professional Networking </h1>
           <p className='lead'>
-            Connect with professionals in your field or get help with information on  your desired career path
+            Connect With Fellow Professionals 
           </p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
