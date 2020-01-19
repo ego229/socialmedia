@@ -32,7 +32,7 @@ const Login = ({ login, isAuthenticated }) => {
       
       <h1 className='large text-primary'>Sign In</h1>
       <p className='lead'>
-        <i className='fas fa-user' /> Sign Into Your Account
+        <i className='fas fa-edit' /> Sign Into Your Account
       </p>
       
       <form className='form' onSubmit={e => onSubmit(e)}>
@@ -60,7 +60,7 @@ const Login = ({ login, isAuthenticated }) => {
       </form>
       
       <p className='my-1'>
-        Don't have an account? <Link to='/register'>Sign Up</Link>
+        Need an account? <Link to='/register'>Sign Up</Link>
       </p>
       
     </Fragment>
