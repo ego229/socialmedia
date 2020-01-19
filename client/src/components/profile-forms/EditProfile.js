@@ -22,7 +22,8 @@ const EditProfile = ({
     facebook: '',
     linkedin: '',
     youtube: '',
-    instagram: ''
+    instagram: '',
+    professionalSite: ''
   });
 
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
@@ -36,15 +37,15 @@ const EditProfile = ({
       location: loading || !profile.location ? '' : profile.location,
       status: loading || !profile.status ? '' : profile.status,
       skills: loading || !profile.skills ? '' : profile.skills.join(','),
-      githubusername:
-        loading || !profile.githubusername ? '' : profile.githubusername,
+      githubusername: loading || !profile.githubusername ? '' : profile.githubusername,
       bio: loading || !profile.bio ? '' : profile.bio,
       twitter: loading || !profile.social ? '' : profile.social.twitter,
       facebook: loading || !profile.social ? '' : profile.social.facebook,
       linkedin: loading || !profile.social ? '' : profile.social.linkedin,
       youtube: loading || !profile.social ? '' : profile.social.youtube,
-      instagram: loading || !profile.social ? '' : profile.social.instagram
-    });
+      instagram: loading || !profile.social ? '' : profile.social.instagram,
+      professionalSite: loading || !profile.social ? '' : profile.social.professionalSite
+    })
   }, [loading, getCurrentProfile]);
 
   const {
@@ -59,7 +60,8 @@ const EditProfile = ({
     facebook,
     linkedin,
     youtube,
-    instagram
+    instagram,
+    professionalSite
   } = formData;
 
   const onChange = e =>
@@ -229,6 +231,17 @@ const EditProfile = ({
                 placeholder='Instagram URL'
                 name='instagram'
                 value={instagram}
+                onChange={e => onChange(e)}
+              />
+            </div>
+
+            <div className='form-group social-input'>
+              <i className='fas fa-user-tie fa-3x' />
+              <input
+                type='text'
+                placeholder='PersonalSite URL'
+                name='professionalSite'
+                value={professionalSite}
                 onChange={e => onChange(e)}
               />
             </div>

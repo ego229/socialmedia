@@ -22,7 +22,8 @@ const CreateProfile = ({
 		facebook: '',
 		linkedin: '',
 		youtube: '',
-		instagram: ''
+		instagram: '',
+		professionalSite: '',
 	});
 	const [displaySocialInputs, toggleSocialInputs] = useState(false);
 	const {
@@ -37,7 +38,8 @@ const CreateProfile = ({
 		facebook,
 		linkedin,
 		youtube,
-		instagram
+		instagram,
+		professionalSite,
 	} = formData;
 	const onChange = e =>
 		setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -210,6 +212,17 @@ const CreateProfile = ({
 								placeholder='Instagram URL'
 								name='instagram'
 								value={instagram}
+								onChange={e => onChange(e)}
+							/>
+						</div>
+
+						<div className='form-group social-input'>
+							<i className='fas fa-user-tie fa-3x' />
+							<input
+								type='text'
+								placeholder='professionalSite URL'
+								name='professionalSite'
+								value={professionalSite}
 								onChange={e => onChange(e)}
 							/>
 						</div>

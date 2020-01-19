@@ -59,7 +59,8 @@ router.get('/me', auth, async (req, res) => {
         facebook,
         twitter,
         instagram,
-        linkedin
+        linkedin,
+        professionalSite
       } = req.body;
   
       // Build profile object
@@ -80,6 +81,8 @@ router.get('/me', auth, async (req, res) => {
       if (facebook) profileFields.social.facebook = facebook;
       if (linkedin) profileFields.social.linkedin = linkedin;
       if (instagram) profileFields.social.instagram = instagram;
+      if (professionalSite) profileFields.social.professionalSite = professionalSite;
+
   
       try {
         // Using upsert option (creates new doc if no match is found):

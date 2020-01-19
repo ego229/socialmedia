@@ -17,7 +17,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
         <Spinner />
       ) : (
         <> 
-          <h1 className='large text-primary'>Professionals</h1>
+          <h1 className='large text-primary2'>Professionals</h1>
           <p className='lead'>
             <i className='fas fa-binoculars' /> Look Through Listed Professionals
           </p>

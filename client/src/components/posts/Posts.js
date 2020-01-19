@@ -15,7 +15,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     <Spinner />
   ) : (
     <Fragment>
-      <h1 className='large text-primary'>Professional Chatter</h1>
+      <h1 className='large text-primary2'>Professional Chatter</h1>
       <p className='lead'>
         <i className='fas fa-comments' /> Start the conversation
       </p>

@@ -102,7 +102,12 @@ const ProfileSchema = new mongoose.Schema({
     },
     instagram: {
       type: String
+    },
+
+    professionalSite: {
+      type: String
     }
+  
   },
   date: {
     type: Date,

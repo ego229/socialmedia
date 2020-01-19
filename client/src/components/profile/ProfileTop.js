@@ -50,6 +50,11 @@ const ProfileTop = ({
             <i className='fab fa-instagram fa-2x' />
           </a>
         )}
+         {social && social.professionalSite && (
+          <a href={social.professionalSite} target='_blank' rel='noopener noreferrer'>
+            <i className='fas fa-user-tie fa-3x' />
+          </a>
+        )}
       </div>
     </div>
   );
