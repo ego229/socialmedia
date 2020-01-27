@@ -32,10 +32,9 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Add Your Education</h1>
+      <h1 className='large text-primary2'>Add Your Education</h1>
       <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any school or bootcamp that you
-        have attended
+        <i className='fas fa-user-graduate' /> Include degree or certificate received. 
       </p>
       <small>* = required field</small>
       <form

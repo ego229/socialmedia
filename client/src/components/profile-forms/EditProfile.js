@@ -74,9 +74,9 @@ const EditProfile = ({
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Edit Your Profile</h1>
+      <h1 className='large text-primary2'>Update Your Profile</h1>
       <p className='lead'>
-        <i className='fas fa-user' /> Add some changes to your profile
+        <i className='fas fa-user' /> Edit profile to reflect changes
       </p>
       <small>* = required field</small>
       <form className='form' onSubmit={e => onSubmit(e)}>
@@ -86,14 +86,23 @@ const EditProfile = ({
             <option value='Developer'>Developer</option>
             <option value='Junior Developer'>Junior Developer</option>
             <option value='Senior Developer'>Senior Developer</option>
+            <option value='Manager'>UX Designer</option>
+            <option value='Manager'>Consultant</option>
+            <option value='Manager'>Director</option>
             <option value='Manager'>Manager</option>
+            <option value='Manager'>Sr Manager</option>
+            <option value='Manager'>Executive</option>
+            <option value='Manager'>Project Manager</option>
+            <option value='Manager'>Recruiter</option>
+            <option value='Manager'>Sr Recruiter</option>
             <option value='Student or Learning'>Student or Learning</option>
             <option value='Instructor'>Instructor or Teacher</option>
             <option value='Intern'>Intern</option>
+            <option value='Other'>Analyst</option>
             <option value='Other'>Other</option>
           </select>
           <small className='form-text'>
-            Give us an idea of where you are at in your career
+            Select career status
           </small>
         </div>
         <div className='form-group'>
@@ -105,7 +114,7 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own company or one you work for
+            Current place of employment. 
           </small>
         </div>
         <div className='form-group'>
@@ -117,7 +126,7 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Could be your own or a company website
+            Personal or professional website
           </small>
         </div>
         <div className='form-group'>
@@ -141,7 +150,7 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+          Skills and certifications (eg. PMP, CISSP, CCNA, JavaScript, PHP, HTML, JAVA)
           </small>
         </div>
         <div className='form-group'>
@@ -153,8 +162,7 @@ const EditProfile = ({
             onChange={e => onChange(e)}
           />
           <small className='form-text'>
-            If you want your latest repos and a Github link, include your
-            username
+            Use Github username to showcase your projects
           </small>
         </div>
         <div className='form-group'>
@@ -164,7 +172,7 @@ const EditProfile = ({
             value={bio}
             onChange={e => onChange(e)}
           />
-          <small className='form-text'>Tell us a little about yourself</small>
+          <small className='form-text'>Let us know who you are</small>
         </div>
 
         <div className='my-2'>
