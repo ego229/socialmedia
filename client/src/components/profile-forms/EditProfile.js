@@ -72,6 +72,8 @@ const EditProfile = ({
     createProfile(formData, history, true);
   };
 
+
+  
   return (
     <Fragment>
       <h1 className='large text-primary2'>Update Your Profile</h1>
@@ -82,7 +84,7 @@ const EditProfile = ({
       <form className='form' onSubmit={e => onSubmit(e)}>
         <div className='form-group'>
           <select name='status' value={status} onChange={e => onChange(e)}>
-            <option>* Select Professional Status</option>
+            <option>* Choose Your Professional Title</option>
             <option value='Developer'>Developer</option>
             <option value='Junior Developer'>Junior Developer</option>
             <option value='Senior Developer'>Senior Developer</option>
@@ -98,7 +100,9 @@ const EditProfile = ({
             <option value='Student or Learning'>Student or Learning</option>
             <option value='Instructor'>Instructor or Teacher</option>
             <option value='Intern'>Intern</option>
+            <option value='Other'>Self Employed</option>
             <option value='Other'>Analyst</option>
+
             <option value='Other'>Other</option>
           </select>
           <small className='form-text'>
@@ -256,13 +260,18 @@ const EditProfile = ({
           </Fragment>
         )}
 
-        <input type='submit' className='btn btn-primary my-1' />
+            
+
+        <input type='submit' className='btn btn-primary my-1' onClick = {()=>
+  alert("Profile Updated ")
+        }/>
         <Link className='btn btn-light my-1' to='/dashboard'>
           Go Back
         </Link>
       </form>
     </Fragment>
   );
+  
 };
 
 EditProfile.propTypes = {
@@ -274,6 +283,8 @@ EditProfile.propTypes = {
 const mapStateToProps = state => ({
   profile: state.profile
 });
+
+
 
 export default connect(
   mapStateToProps,

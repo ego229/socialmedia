@@ -1,0 +1,15 @@
+{
+    "pronet": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-socmedia-pronet-104625-authRole",
+            "UnauthRoleArn": "arn:aws:iam::816701549205:role/amplify-socmedia-pronet-104625-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::816701549205:role/amplify-socmedia-pronet-104625-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-socmedia-pronet-104625-deployment",
+            "UnauthRoleName": "amplify-socmedia-pronet-104625-unauthRole",
+            "StackName": "amplify-socmedia-pronet-104625",
+            "StackId": "arn:aws:cloudformation:us-east-1:816701549205:stack/amplify-socmedia-pronet-104625/58f440a0-41e5-11ea-9b78-0e05d1a3c102",
+            "AmplifyAppId": "dnf4l7f60lgfd"
+        }
+    }
+}

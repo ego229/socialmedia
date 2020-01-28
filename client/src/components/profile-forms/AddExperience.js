@@ -109,7 +109,8 @@ const AddExperience = ({ addExperience, history }) => {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn btn-primary my-1' />
+        <input type='submit' className='btn btn-primary my-1' onClick = {()=>
+  alert("Experience Added ")}/>/>
         <Link className='btn btn-light my-1' to='/dashboard'>
           Go Back
         </Link>
