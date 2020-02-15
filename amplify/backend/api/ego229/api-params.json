@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "socmedia229",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "ego229",
+    "apiName": "ego229",
+    "functionArns": [
+        {
+            "lambdaFunction": "socmedia229"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-socmedia-pronet-104625-authRole",
+        "unAuthRoleName": "amplify-socmedia-pronet-104625-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "socmedia229",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
