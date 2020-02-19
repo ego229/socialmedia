@@ -62,31 +62,16 @@ const CreateProfile = ({
 			</p>
 			<small>* = required field</small>
 			<form className='form' onSubmit={e => onSubmit(e)}>
-				<div className='form-group'>
-					<select name='status' value={status} onChange={e => onChange(e)}>
-					<option>* Choose Your Professional Title</option>
-            <option value='Developer'>Developer</option>
-            <option value='Junior Developer'>Junior Developer</option>
-            <option value='Senior Developer'>Senior Developer</option>
-            <option value='Manager'>UX Designer</option>
-            <option value='Manager'>Consultant</option>
-            <option value='Manager'>Director</option>
-            <option value='Manager'>Manager</option>
-            <option value='Manager'>Sr Manager</option>
-            <option value='Manager'>Executive</option>
-            <option value='Manager'>Project Manager</option>
-            <option value='Manager'>Recruiter</option>
-            <option value='Manager'>Sr Recruiter</option>
-            <option value='Student or Learning'>Student or Learning</option>
-            <option value='Instructor'>Instructor or Teacher</option>
-            <option value='Intern'>Intern</option>
-            <option value='Other'>Self Employed</option>
-            <option value='Other'>Analyst</option>
-
-            <option value='Other'>Other</option>
-          </select>
+			<div className='form-group'>
+					<input
+						type='text'
+						placeholder='What is your professional title?'
+						name='status'
+						value={status}
+						onChange={e => onChange(e)}
+					/>
 					<small className='form-text'>
-						Give us an idea of where you are at in your career
+						Select your career status
 					</small>
 				</div>
 				<div className='form-group'>
